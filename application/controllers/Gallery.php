@@ -17,6 +17,8 @@ class Gallery extends CI_Controller{
     //put your code here
     public function index()
 	{
-		$this->load->view('gallery');
+		//$this->load->view('gallery');
+                $this->data['pagebody'] = 'gallery';
+                $this->render();
 	}
 }
